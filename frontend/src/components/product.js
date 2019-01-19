@@ -1,14 +1,18 @@
-import React, { Component } from "react";
-import logo from "../blockchain.svg";
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import App from "../App";
+import logo from "../blockchain.svg"
 
+  const Products = () => (
+    <div className="products">
+      <div className="App-header">
+        <div className="svgs">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to blockGames</h2>
+        </div>
+      </div>
+    </div>
+  );
 
-import {Router, Route, IndexRoute, Link, } from "react-router"
+export default Products;
 
-class ProductPage extends Component {
-  render() {
-    return <div>FIRST PAGE<a href="#/" className="waves-effect waves-light btn">back</a></div>
-  }
-}
-
-
-export default ProductPage;

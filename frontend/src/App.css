@@ -1,7 +1,23 @@
 .App {
   text-align: center;
 }
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
+main {
+  flex: 1 0 auto;
+}
+
+.root {
+  background-color: #222;
+}
+h3 {
+  text-align: center;
+  color: white;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -13,7 +29,7 @@
 
 .App-header {
   background-color: #222;
-  height: 200px;
+  height: 220px;
   padding: 20px;
   color: white;
 }
@@ -21,8 +37,28 @@
 .App-intro {
   font-size: large;
 }
+nav {
+  background-color: #222;
+}
+footer.page-footer {
+  background-color: #222;
+  display: flex;
+
+}
+.intro {
+  background-color: #222;
+  height: 170px;
+
+}
+.slider {
+  background-color: #222;
+}
+#form-header {
+  color: white;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+

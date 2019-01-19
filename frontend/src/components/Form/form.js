@@ -5,7 +5,9 @@ class Form extends Component {
   // Setting the component's initial state
   state = {
     firstName: "",
-    lastName: ""
+    lastName: "",
+    eMail: "",
+    Company: ""
   };
 
   handleInputChange = event => {
@@ -23,10 +25,14 @@ class Form extends Component {
     event.preventDefault();
 
     // Alert the user their first and last name, clear `this.state.firstName` and `this.state.lastName`, clearing the inputs
-    alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
+    alert(
+      `Hello ${this.state.firstName} ${this.state.lastName}${this.state.eMail}`
+    );
     this.setState({
       firstName: "",
-      lastName: ""
+      lastName: "",
+      eMail: "",
+      company: ""
     });
   };
 
@@ -34,8 +40,9 @@ class Form extends Component {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
       <div>
-        <p>
-          Hello {this.state.firstName} {this.state.lastName}
+        <p id="form-header">
+          Developers: fill out this form to begin selling your game keys on
+          blockGames{this.state.firstName} {this.state.lastName}
         </p>
         <form className="form">
           <input
@@ -52,7 +59,30 @@ class Form extends Component {
             type="text"
             placeholder="Last Name"
           />
-          <button onClick={this.handleFormSubmit}>Submit</button>
+          <input
+            value={this.state.eMail}
+            name="eMail"
+            onChange={this.handleInputChange}
+            type="text"
+            placeholder="E-Mail or Preffered Contact Method"
+          />
+          <input
+            value={this.state.Company}
+            name="eMail"
+            onChange={this.handleInputChange}
+            type="text"
+            placeholder="Company or Name of Game"
+          />
+
+          <button
+            onClick={this.handleFormSubmit}
+            className="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+          >
+            Submit
+            <i className="material-icons-right"></i>
+          </button>
         </form>
       </div>
     );

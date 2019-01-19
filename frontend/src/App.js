@@ -21,6 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="root">
+      <main>
       
         <div className="App-header">
         <div className="svgs">
@@ -29,10 +30,10 @@ class App extends Component {
           <h2>Welcome to blockGames</h2>
           </div>
         </div>
-        <div className="listing">
-          <h2>
-            take a look at some games and purchase one to reveal the code!
-          </h2>
+        <div className="intro">
+          <h3>
+           This is your destination for purchasing games with your blockchain based currencies!
+          </h3>
         </div>
         <div className="card">
           <Slider>
@@ -67,6 +68,7 @@ class App extends Component {
             amount={1}
           />
         </p>
+        </main>
 
         <Footer
           copyrights="blockGames Copyright 2019"
