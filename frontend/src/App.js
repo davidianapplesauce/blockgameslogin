@@ -1,28 +1,112 @@
-import React, { Component } from 'react';
-import logo from './blockchain.svg';
-import Checkout from './Checkout';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./blockchain.svg";
+import Checkout from "./Checkout";
+import "./App.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import AppRouter from "./AppRouter"
+import {
+  Button,
+  Icon,
+  Card,
+  Col,
+  CardTitle,
+  Slider,
+  Footer,
+  Slide,
+  Navbar,
+  NavItem
+} from "react-materialize";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="root">
+      
         <div className="App-header">
+        <div className="svgs">
+
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to blockGames</h2>
+          </div>
         </div>
-        <div class="listing">
-        <h2>take a look at some games and purchase one to reveal the code!</h2>
+        <div className="listing">
+          <h2>
+            take a look at some games and purchase one to reveal the code!
+          </h2>
         </div>
-        
+        <div className="card">
+          <Slider>
+            <Slide
+              src="https://steamcdn-a.akamaihd.net/steam/apps/388960/header.jpg?t=1484685552"
+              title="Blockchain marketplace for your digital game keys!"
+              height="580"
+              width="250"
+            >
+              Currently accepting BTC, future BCH and ETH integration.
+            </Slide>
+            <Slide
+              src="https://steamcdn-a.akamaihd.net/steam/bundles/3020/8iqegmcat6ahd237/header.jpg?t=1491305150"
+              title="Take a look around we have many indie games"
+              placement="left"
+            >
+              We also strive to have the latest AAA titles!
+            </Slide>
+            <Slide
+              src="https://steamcdn-a.akamaihd.net/steam/apps/727110/ss_d3cfabc7ea372581791bd8903dee80fc23f6f20a.1920x1080.jpg?t=1508397447"
+              title="Developers please contact us!"
+              placement="right"
+            >
+              We would love to host your game keys!
+            </Slide>
+          </Slider>
+        </div>
         <p className="App-intro">
           <Checkout
-            name={'The Road to learn React'}
-            description={'Open Source React Book'}
+            name={"The Road to learn React"}
+            description={"Open Source React Book"}
             amount={1}
           />
         </p>
-        <p>Found in <a href="https://roadtoreact.com/">the Road to learn React</a></p>
+
+        <Footer
+          copyrights="blockGames Copyright 2019"
+          moreLinks={
+            <a className="grey-text text-lighten-4 right" href="#!">
+              More Links
+            </a>
+          }
+          links={
+            <ul>
+              <li>
+                <a className="grey-text text-lighten-3" href="#!">
+                  LinkedIn (not complete)
+                </a>
+              </li>
+              <li>
+                <a className="grey-text text-lighten-3" href="#!">
+                  Github (not complete)
+                </a>
+              </li>
+              <li>
+                <a className="grey-text text-lighten-3" href="#!">
+                  sources (not complete)
+                </a>
+              </li>
+              <li>
+                <a className="grey-text text-lighten-3" href="#!">
+                  etc. (not complete)
+                </a>
+              </li>
+            </ul>
+          }
+          className="example"
+        >
+          <h5 className="white-text">Contact us</h5>
+          <p className="grey-text text-lighten-4">
+            Developers please contact us if you would like to sell your games on
+            our marketplace!
+          </p>
+        </Footer>
       </div>
     );
   }
