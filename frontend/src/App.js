@@ -38,15 +38,15 @@ class App extends Component {
         <div className="card">
           <Slider>
             <Slide
-              src="https://steamcdn-a.akamaihd.net/steam/apps/388960/header.jpg?t=1484685552"
+              src="https://i.ytimg.com/vi/5Derwdk-rgA/maxresdefault.jpg"
               title="Blockchain marketplace for your digital game keys!"
-              height="580"
-              width="250"
+              // height="580"
+              // width="250"
             >
               Currently accepting BTC, future BCH and ETH integration.
             </Slide>
             <Slide
-              src="https://steamcdn-a.akamaihd.net/steam/bundles/3020/8iqegmcat6ahd237/header.jpg?t=1491305150"
+              src="http://fullcrackpc.com/wp-content/uploads/torn-tales-banner.jpg"
               title="Take a look around we have many indie games"
               placement="left"
             >

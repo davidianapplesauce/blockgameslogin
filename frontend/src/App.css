@@ -56,7 +56,19 @@ footer.page-footer {
 #form-header {
   color: white;
 }
-
+.card-stacked {
+  background-color: #222;
+  color:white;
+  
+}
+.parent {
+  background-color: #222
+}
+.cardIMG img {
+  background: #222;
+  height: 620;
+  width:350;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
