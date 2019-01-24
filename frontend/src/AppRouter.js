@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import App from "./App";
+import LoginPage from "./components/auth/LoginPage";
 import logo from "./blockchain.svg";
 import {
   Button,
@@ -50,11 +51,15 @@ render(){
           <li>
             <Link to="/users/">Users</Link>
           </li>
+          <li>
+            <Link to="login">Login</Link>
+          </li>
         </ul>
       </nav>
 
       <Route path="/" exact component={App} />
       <Route path="/Products" component={Products} />
+      <Route path="/login" component={LoginPage}/>
       {/* <Route path="/users" component={Users} />
       <Route path="/Checkout" component={Checkout} /> */}
     </div>

@@ -27,6 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className="root">
+      <div className="container">
       <main>
       
         <div className="App-header">
@@ -75,6 +76,9 @@ class App extends Component {
           />
         </p>
         </main>
+        </div>
+        
+
 
         <Footer
           copyrights="blockGames Copyright 2019"

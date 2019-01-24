@@ -1,0 +1,8 @@
+{
+  "name": "blockGames2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tdolan21/blockGames2.git",
+  "author": "David Applesauce <dsweck@gmail.com>",
+  "license": "MIT"
+}
