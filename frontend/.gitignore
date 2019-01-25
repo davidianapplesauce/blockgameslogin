@@ -22,5 +22,3 @@ STRIPE_PUBLISHABLE
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-LoginPage.js

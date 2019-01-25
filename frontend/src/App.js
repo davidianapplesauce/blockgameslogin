@@ -77,8 +77,6 @@ class App extends Component {
         </p>
         </main>
         </div>
-        
-
 
         <Footer
           copyrights="blockGames Copyright 2019"
